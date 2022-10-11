@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<link href="style.css" rel="stylesheet">
+<canvas id="can"></canvas>
+<video src="rrsq.mov" id="rr" width=400 height=400 muted autoplay></video>
+<div id="button" onclick="setInterval(render, 0); this.style.display = 'none'; creates(slide.value, 0, 0, initSize, -1); slide.style.display = 'none'; audio.currentTime = rr.currentTime + 0.5; audio.play(); now = performance.now(); last = now;">Play (4)</div>
+<input id="slide" type="range" min="1" max="7" value="4" oninput="button.innerText = 'Play (' + this.value + ')';"></input>
+<audio id="audio" src="Rickroll.mp3" loop></audio>
+<p id="count"> ---.-- | ---.-- | ---.--</p>
+<script src="script.js"></script>
